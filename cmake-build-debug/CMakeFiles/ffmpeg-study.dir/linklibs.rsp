@@ -1,0 +1,1 @@
+ -LE:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/lib -lavformat -lavcodec -lavdevice -lavfilter -lavutil -lpostproc -lswresample -lswscale -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

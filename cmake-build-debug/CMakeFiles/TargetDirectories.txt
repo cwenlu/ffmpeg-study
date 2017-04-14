@@ -1,0 +1,4 @@
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/CMakeFiles/ffmpeg-study.dir
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/CMakeFiles/ffmpeg.dir
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/CMakeFiles/rebuild_cache.dir
