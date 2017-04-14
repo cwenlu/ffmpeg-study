@@ -5,12 +5,41 @@
 #include <libavutil/imgutils.h>
 #include "yuv2h264.h"
 
+static void flush_encoder(AVFormatContext *fmt_ctx,AVCodecContext *codec_ctx){
+    if(!(codec_ctx->codec->capabilities & AV_CODEC_CAP_DELAY)){
+        return;
+    }
+    AVPacket pkt;
+    av_init_packet(&pkt);
+    pkt.data=NULL;
+    pkt.size=0;
+    int got_packet_ptr=0;
+    int ret=-1;
+    while(1){
+        ret=avcodec_encode_video2 (codec_ctx, &pkt,
+                               NULL, &got_packet_ptr);
+        if(ret<0){
+            break;
+        }
+        if(!got_packet_ptr){
+            break;
+        }
+        ret=av_write_frame(fmt_ctx,&pkt);
+        if(ret<0){
+            break;
+        }
+
+    }
+    av_packet_unref(&pkt);
+}
+
 //FILE *in_file=fopen("akiyo_qcif.yuv","rb+");
 void yuv2h264(){
     static char *out_file="yuv2h264.h264";
     AVFormatContext *fmt_ctx=NULL;
     AVOutputFormat *ofmt=NULL;
     AVCodecContext *codec_ctx=NULL;
+    AVStream *video_st=NULL;
     AVCodec *codec=NULL;
     AVFrame *frame=NULL;
     AVPacket pkt;
@@ -30,7 +59,7 @@ void yuv2h264(){
         goto end;
     }
 
-    avformat_new_stream(fmt_ctx,NULL);
+    video_st=avformat_new_stream(fmt_ctx,NULL);
 
     codec=avcodec_find_encoder(ofmt->video_codec);
     if(!codec){
@@ -44,6 +73,7 @@ void yuv2h264(){
 //    codec_ctx->bit_rate=400000;
     codec_ctx->time_base.num=1;
     codec_ctx->time_base.den=25;
+    codec_ctx->gop_size=1;
 //    codec_ctx->qmin = 10;
 //    codec_ctx->qmax = 51;
     AVDictionary *param=NULL;
@@ -65,30 +95,43 @@ void yuv2h264(){
 
     avformat_write_header(fmt_ctx,NULL);
     av_init_packet(&pkt);
+    pkt.data=NULL;
+    pkt.size=0;
     pkt_inited=1;
 
     int y_size=codec_ctx->width*codec_ctx->height;
+    double pre_frame_s=av_q2d(codec_ctx->time_base);
 
     FILE *in_file=fopen("akiyo_qcif.yuv","rb+");
+    int i=0;
     while(!feof(in_file)){
+
         fread(frame_buff,1,frame_size,in_file);
         frame->data[0]=frame_buff;              //y
         frame->data[1]=frame_buff+y_size;       //u
         frame->data[2]=frame_buff+y_size*5/4;   //v
 
-        frame->pts++;
-        ret=avcodec_send_frame(codec_ctx,frame);
-        if(ret<0){
-            printf("avcodec_send_frame : %d(%s)",ret,av_err2str(ret));
-            goto end;
-        }
-        ret=avcodec_receive_packet(codec_ctx,&pkt);
-        if(ret<0){
-            printf("avcodec_receive_packet : %d(%s)",ret,av_err2str(ret));
-            goto end;
-        }
+        double pre_frame_us=AV_TIME_BASE*pre_frame_s;
+        frame->pts=i*pre_frame_us;
+        i++;
+
+
+        //这种方式avcodec_receive_packet总是报错
+//        ret=avcodec_send_frame(codec_ctx,frame);
+//        if(ret<0){
+//            printf("avcodec_send_frame : %d(%s)",ret,av_err2str(ret));
+//            goto end;
+//        }
+//        ret=avcodec_receive_packet(codec_ctx,&pkt);
+//        if(ret<0){
+//            printf("avcodec_receive_packet : %d(%s)",ret,av_err2str(ret));
+//            goto end;
+//        }
+        int got_packet_ptr;
+        avcodec_encode_video2(codec_ctx,&pkt,frame,&got_packet_ptr);
         av_write_frame(fmt_ctx,&pkt);
     }
+    flush_encoder(fmt_ctx,codec_ctx);
     av_write_trailer(fmt_ctx);
 
     end:
