@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ffmpeg.dir/decoder.c.obj"
   "CMakeFiles/ffmpeg.dir/main.c.obj"
+  "CMakeFiles/ffmpeg.dir/marge_image2video.c.obj"
+  "CMakeFiles/ffmpeg.dir/swsscale.c.obj"
   "CMakeFiles/ffmpeg.dir/yuv2h64.c.obj"
   "CMakeFiles/ffmpeg.dir/yuv2jpg.c.obj"
   "ffmpeg.pdb"

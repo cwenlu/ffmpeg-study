@@ -74,6 +74,7 @@ void yuv2jpg(){
     //<<<<读取yuv数据<<<<
     FILE *in_file=fopen("akiyo_qcif.yuv","rb+");
     fread(frame_buff,1,frame_size,in_file);
+    fclose(in_file);
     //>>>>>>>>>>>>>>>>>>>
 
     int y_size=codec_ctx->width*codec_ctx->height;

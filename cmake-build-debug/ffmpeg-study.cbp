@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ffmpeg-study">
-				<Option output="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/ffmpeg-study.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug"/>
+				<Option output="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/ffmpeg-study.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffmpeg-study"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffmpeg-study"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ffmpeg-study/fast">
-				<Option output="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/ffmpeg-study.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug"/>
+				<Option output="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/ffmpeg-study.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,15 +67,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffmpeg-study/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffmpeg-study/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ffmpeg">
-				<Option output="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/ffmpeg.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug"/>
+				<Option output="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/ffmpeg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -90,15 +90,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffmpeg"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffmpeg"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ffmpeg/fast">
-				<Option output="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/ffmpeg.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug"/>
+				<Option output="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/ffmpeg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -113,40 +113,64 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffmpeg/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 ffmpeg/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/main.c">
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/decoder.c">
 			<Option target="ffmpeg-study"/>
 			<Option target="ffmpeg"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/yuv2h64.c">
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/decoder.h">
 			<Option target="ffmpeg-study"/>
 			<Option target="ffmpeg"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/yuv2jpg.c">
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/main.c">
 			<Option target="ffmpeg-study"/>
 			<Option target="ffmpeg"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/yuv2jpg.h">
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/marge_image2video.c">
 			<Option target="ffmpeg-study"/>
 			<Option target="ffmpeg"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg/CMakeLists.txt">
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/marge_image2video.h">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/swsscale.c">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/swsscale.h">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/yuv2h64.c">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/yuv2jpg.c">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/yuv2jpg.h">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -115,20 +115,26 @@ void yuv2h264(){
         frame->pts=i*pre_frame_us;
         i++;
 
+        send:
+        ret=avcodec_send_frame(codec_ctx,frame);
+        if(ret<0){
+            printf("avcodec_send_frame : %d(%s)",ret,av_err2str(ret));
+            goto end;
+        }
+        ret=avcodec_receive_packet(codec_ctx,&pkt);
+        if(ret<0){
+            //可能出现Resource temporarily unavailable，需要再次发送
+            if(AVERROR(EAGAIN)==ret){
+                goto send;
+            }
+            printf("avcodec_receive_packet : %d(%s)",ret,av_err2str(ret));
+            goto end;
+        }
 
-        //这种方式avcodec_receive_packet总是报错
-//        ret=avcodec_send_frame(codec_ctx,frame);
-//        if(ret<0){
-//            printf("avcodec_send_frame : %d(%s)",ret,av_err2str(ret));
-//            goto end;
-//        }
-//        ret=avcodec_receive_packet(codec_ctx,&pkt);
-//        if(ret<0){
-//            printf("avcodec_receive_packet : %d(%s)",ret,av_err2str(ret));
-//            goto end;
-//        }
-        int got_packet_ptr;
-        avcodec_encode_video2(codec_ctx,&pkt,frame,&got_packet_ptr);
+//        老方法
+//        int got_packet_ptr;
+//        avcodec_encode_video2(codec_ctx,&pkt,frame,&got_packet_ptr);
+
         av_write_frame(fmt_ctx,&pkt);
     }
     flush_encoder(fmt_ctx,codec_ctx);
@@ -151,7 +157,5 @@ void yuv2h264(){
     if(pkt_inited){
         av_packet_unref(&pkt);
     }
-
-
 
 }

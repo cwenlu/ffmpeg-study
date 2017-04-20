@@ -42,10 +42,10 @@ RM = E:\clion\bin\cmake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg
+CMAKE_SOURCE_DIR = C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ffmpeg-study.dir/depend.make
@@ -56,19 +56,44 @@ include CMakeFiles/ffmpeg-study.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ffmpeg-study.dir/flags.make
 
+CMakeFiles/ffmpeg-study.dir/decoder.c.obj: CMakeFiles/ffmpeg-study.dir/flags.make
+CMakeFiles/ffmpeg-study.dir/decoder.c.obj: CMakeFiles/ffmpeg-study.dir/includes_C.rsp
+CMakeFiles/ffmpeg-study.dir/decoder.c.obj: ../decoder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ffmpeg-study.dir/decoder.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ffmpeg-study.dir\decoder.c.obj   -c C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\decoder.c
+
+CMakeFiles/ffmpeg-study.dir/decoder.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffmpeg-study.dir/decoder.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\decoder.c > CMakeFiles\ffmpeg-study.dir\decoder.c.i
+
+CMakeFiles/ffmpeg-study.dir/decoder.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffmpeg-study.dir/decoder.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\decoder.c -o CMakeFiles\ffmpeg-study.dir\decoder.c.s
+
+CMakeFiles/ffmpeg-study.dir/decoder.c.obj.requires:
+
+.PHONY : CMakeFiles/ffmpeg-study.dir/decoder.c.obj.requires
+
+CMakeFiles/ffmpeg-study.dir/decoder.c.obj.provides: CMakeFiles/ffmpeg-study.dir/decoder.c.obj.requires
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/decoder.c.obj.provides.build
+.PHONY : CMakeFiles/ffmpeg-study.dir/decoder.c.obj.provides
+
+CMakeFiles/ffmpeg-study.dir/decoder.c.obj.provides.build: CMakeFiles/ffmpeg-study.dir/decoder.c.obj
+
+
 CMakeFiles/ffmpeg-study.dir/main.c.obj: CMakeFiles/ffmpeg-study.dir/flags.make
 CMakeFiles/ffmpeg-study.dir/main.c.obj: CMakeFiles/ffmpeg-study.dir/includes_C.rsp
 CMakeFiles/ffmpeg-study.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ffmpeg-study.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ffmpeg-study.dir\main.c.obj   -c C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ffmpeg-study.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ffmpeg-study.dir\main.c.obj   -c C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\main.c
 
 CMakeFiles/ffmpeg-study.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffmpeg-study.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\main.c > CMakeFiles\ffmpeg-study.dir\main.c.i
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\main.c > CMakeFiles\ffmpeg-study.dir\main.c.i
 
 CMakeFiles/ffmpeg-study.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffmpeg-study.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\main.c -o CMakeFiles\ffmpeg-study.dir\main.c.s
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\main.c -o CMakeFiles\ffmpeg-study.dir\main.c.s
 
 CMakeFiles/ffmpeg-study.dir/main.c.obj.requires:
 
@@ -81,19 +106,69 @@ CMakeFiles/ffmpeg-study.dir/main.c.obj.provides: CMakeFiles/ffmpeg-study.dir/mai
 CMakeFiles/ffmpeg-study.dir/main.c.obj.provides.build: CMakeFiles/ffmpeg-study.dir/main.c.obj
 
 
+CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj: CMakeFiles/ffmpeg-study.dir/flags.make
+CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj: CMakeFiles/ffmpeg-study.dir/includes_C.rsp
+CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj: ../marge_image2video.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ffmpeg-study.dir\marge_image2video.c.obj   -c C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\marge_image2video.c
+
+CMakeFiles/ffmpeg-study.dir/marge_image2video.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffmpeg-study.dir/marge_image2video.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\marge_image2video.c > CMakeFiles\ffmpeg-study.dir\marge_image2video.c.i
+
+CMakeFiles/ffmpeg-study.dir/marge_image2video.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffmpeg-study.dir/marge_image2video.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\marge_image2video.c -o CMakeFiles\ffmpeg-study.dir\marge_image2video.c.s
+
+CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj.requires:
+
+.PHONY : CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj.requires
+
+CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj.provides: CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj.requires
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj.provides.build
+.PHONY : CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj.provides
+
+CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj.provides.build: CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj
+
+
+CMakeFiles/ffmpeg-study.dir/swsscale.c.obj: CMakeFiles/ffmpeg-study.dir/flags.make
+CMakeFiles/ffmpeg-study.dir/swsscale.c.obj: CMakeFiles/ffmpeg-study.dir/includes_C.rsp
+CMakeFiles/ffmpeg-study.dir/swsscale.c.obj: ../swsscale.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ffmpeg-study.dir/swsscale.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ffmpeg-study.dir\swsscale.c.obj   -c C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\swsscale.c
+
+CMakeFiles/ffmpeg-study.dir/swsscale.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffmpeg-study.dir/swsscale.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\swsscale.c > CMakeFiles\ffmpeg-study.dir\swsscale.c.i
+
+CMakeFiles/ffmpeg-study.dir/swsscale.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffmpeg-study.dir/swsscale.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\swsscale.c -o CMakeFiles\ffmpeg-study.dir\swsscale.c.s
+
+CMakeFiles/ffmpeg-study.dir/swsscale.c.obj.requires:
+
+.PHONY : CMakeFiles/ffmpeg-study.dir/swsscale.c.obj.requires
+
+CMakeFiles/ffmpeg-study.dir/swsscale.c.obj.provides: CMakeFiles/ffmpeg-study.dir/swsscale.c.obj.requires
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/swsscale.c.obj.provides.build
+.PHONY : CMakeFiles/ffmpeg-study.dir/swsscale.c.obj.provides
+
+CMakeFiles/ffmpeg-study.dir/swsscale.c.obj.provides.build: CMakeFiles/ffmpeg-study.dir/swsscale.c.obj
+
+
 CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj: CMakeFiles/ffmpeg-study.dir/flags.make
 CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj: CMakeFiles/ffmpeg-study.dir/includes_C.rsp
 CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj: ../yuv2h64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ffmpeg-study.dir\yuv2h64.c.obj   -c C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\yuv2h64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ffmpeg-study.dir\yuv2h64.c.obj   -c C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\yuv2h64.c
 
 CMakeFiles/ffmpeg-study.dir/yuv2h64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffmpeg-study.dir/yuv2h64.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\yuv2h64.c > CMakeFiles\ffmpeg-study.dir\yuv2h64.c.i
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\yuv2h64.c > CMakeFiles\ffmpeg-study.dir\yuv2h64.c.i
 
 CMakeFiles/ffmpeg-study.dir/yuv2h64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffmpeg-study.dir/yuv2h64.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\yuv2h64.c -o CMakeFiles\ffmpeg-study.dir\yuv2h64.c.s
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\yuv2h64.c -o CMakeFiles\ffmpeg-study.dir\yuv2h64.c.s
 
 CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj.requires:
 
@@ -109,16 +184,16 @@ CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj.provides.build: CMakeFiles/ffmpeg-stud
 CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj: CMakeFiles/ffmpeg-study.dir/flags.make
 CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj: CMakeFiles/ffmpeg-study.dir/includes_C.rsp
 CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj: ../yuv2jpg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ffmpeg-study.dir\yuv2jpg.c.obj   -c C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\yuv2jpg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ffmpeg-study.dir\yuv2jpg.c.obj   -c C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\yuv2jpg.c
 
 CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\yuv2jpg.c > CMakeFiles\ffmpeg-study.dir\yuv2jpg.c.i
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\yuv2jpg.c > CMakeFiles\ffmpeg-study.dir\yuv2jpg.c.i
 
 CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\yuv2jpg.c -o CMakeFiles\ffmpeg-study.dir\yuv2jpg.c.s
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\yuv2jpg.c -o CMakeFiles\ffmpeg-study.dir\yuv2jpg.c.s
 
 CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj.requires:
 
@@ -133,21 +208,27 @@ CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj.provides.build: CMakeFiles/ffmpeg-stud
 
 # Object files for target ffmpeg-study
 ffmpeg__study_OBJECTS = \
+"CMakeFiles/ffmpeg-study.dir/decoder.c.obj" \
 "CMakeFiles/ffmpeg-study.dir/main.c.obj" \
+"CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj" \
+"CMakeFiles/ffmpeg-study.dir/swsscale.c.obj" \
 "CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj" \
 "CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj"
 
 # External object files for target ffmpeg-study
 ffmpeg__study_EXTERNAL_OBJECTS =
 
+ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/decoder.c.obj
 ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/main.c.obj
+ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj
+ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/swsscale.c.obj
 ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj
 ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj
 ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/build.make
 ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/linklibs.rsp
 ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/objects1.rsp
 ffmpeg-study.exe: CMakeFiles/ffmpeg-study.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ffmpeg-study.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable ffmpeg-study.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ffmpeg-study.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -155,7 +236,10 @@ CMakeFiles/ffmpeg-study.dir/build: ffmpeg-study.exe
 
 .PHONY : CMakeFiles/ffmpeg-study.dir/build
 
+CMakeFiles/ffmpeg-study.dir/requires: CMakeFiles/ffmpeg-study.dir/decoder.c.obj.requires
 CMakeFiles/ffmpeg-study.dir/requires: CMakeFiles/ffmpeg-study.dir/main.c.obj.requires
+CMakeFiles/ffmpeg-study.dir/requires: CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj.requires
+CMakeFiles/ffmpeg-study.dir/requires: CMakeFiles/ffmpeg-study.dir/swsscale.c.obj.requires
 CMakeFiles/ffmpeg-study.dir/requires: CMakeFiles/ffmpeg-study.dir/yuv2h64.c.obj.requires
 CMakeFiles/ffmpeg-study.dir/requires: CMakeFiles/ffmpeg-study.dir/yuv2jpg.c.obj.requires
 
@@ -166,6 +250,6 @@ CMakeFiles/ffmpeg-study.dir/clean:
 .PHONY : CMakeFiles/ffmpeg-study.dir/clean
 
 CMakeFiles/ffmpeg-study.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug\CMakeFiles\ffmpeg-study.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles\ffmpeg-study.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ffmpeg-study.dir/depend
 

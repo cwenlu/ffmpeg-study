@@ -47,10 +47,10 @@ RM = E:\clion\bin\cmake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg
+CMAKE_SOURCE_DIR = C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug\CMakeFiles C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,6 +135,36 @@ ffmpeg/fast:
 	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/build
 .PHONY : ffmpeg/fast
 
+decoder.obj: decoder.c.obj
+
+.PHONY : decoder.obj
+
+# target to build an object file
+decoder.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/decoder.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/decoder.c.obj
+.PHONY : decoder.c.obj
+
+decoder.i: decoder.c.i
+
+.PHONY : decoder.i
+
+# target to preprocess a source file
+decoder.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/decoder.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/decoder.c.i
+.PHONY : decoder.c.i
+
+decoder.s: decoder.c.s
+
+.PHONY : decoder.s
+
+# target to generate assembly for a file
+decoder.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/decoder.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/decoder.c.s
+.PHONY : decoder.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -164,6 +194,66 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/main.c.s
 	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/main.c.s
 .PHONY : main.c.s
+
+marge_image2video.obj: marge_image2video.c.obj
+
+.PHONY : marge_image2video.obj
+
+# target to build an object file
+marge_image2video.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/marge_image2video.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/marge_image2video.c.obj
+.PHONY : marge_image2video.c.obj
+
+marge_image2video.i: marge_image2video.c.i
+
+.PHONY : marge_image2video.i
+
+# target to preprocess a source file
+marge_image2video.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/marge_image2video.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/marge_image2video.c.i
+.PHONY : marge_image2video.c.i
+
+marge_image2video.s: marge_image2video.c.s
+
+.PHONY : marge_image2video.s
+
+# target to generate assembly for a file
+marge_image2video.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/marge_image2video.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/marge_image2video.c.s
+.PHONY : marge_image2video.c.s
+
+swsscale.obj: swsscale.c.obj
+
+.PHONY : swsscale.obj
+
+# target to build an object file
+swsscale.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/swsscale.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/swsscale.c.obj
+.PHONY : swsscale.c.obj
+
+swsscale.i: swsscale.c.i
+
+.PHONY : swsscale.i
+
+# target to preprocess a source file
+swsscale.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/swsscale.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/swsscale.c.i
+.PHONY : swsscale.c.i
+
+swsscale.s: swsscale.c.s
+
+.PHONY : swsscale.s
+
+# target to generate assembly for a file
+swsscale.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/swsscale.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/swsscale.c.s
+.PHONY : swsscale.c.s
 
 yuv2h64.obj: yuv2h64.c.obj
 
@@ -235,9 +325,18 @@ help:
 	@echo ... ffmpeg-study
 	@echo ... ffmpeg
 	@echo ... rebuild_cache
+	@echo ... decoder.obj
+	@echo ... decoder.i
+	@echo ... decoder.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... marge_image2video.obj
+	@echo ... marge_image2video.i
+	@echo ... marge_image2video.s
+	@echo ... swsscale.obj
+	@echo ... swsscale.i
+	@echo ... swsscale.s
 	@echo ... yuv2h64.obj
 	@echo ... yuv2h64.i
 	@echo ... yuv2h64.s
