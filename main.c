@@ -9,15 +9,20 @@
 #include "decoder.h"
 #include "swsscale.h"
 #include "marge_image2video.h"
-int main() {
+#include "pcm2aac.h"
+#include "remuxing.h"
+//int main() {
+//
+////    yuv2jpg();
+////    yuv2h264();
+////    decoder();
+////    decoder2();
+////    convert();
+////    margeImage2Video("C:/Users/Administrator.PC-20160506VZIM/Desktop/frame/","C:/Users/Administrator.PC-20160506VZIM/Desktop/frame/marge.mp4");
+////    pcm2aac();
+////    remux("C:/Users/Administrator.PC-20160506VZIM/Desktop/kkk.mp4","C:/Users/Administrator.PC-20160506VZIM/Desktop/kkk_copy.mp4");
+////    demux();
+//    return 0;
+//}
 
-//    yuv2jpg();
-//    yuv2h264();
-//    decoder();
-//    decoder2();
-//    convert();
 
-    margeImage2Video("C:/Users/Administrator.PC-20160506VZIM/Desktop/frame/","C:/Users/Administrator.PC-20160506VZIM/Desktop/frame/marge.mp4");
-
-    return 0;
-}

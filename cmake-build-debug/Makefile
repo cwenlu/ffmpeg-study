@@ -225,6 +225,96 @@ marge_image2video.c.s:
 	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/marge_image2video.c.s
 .PHONY : marge_image2video.c.s
 
+output_example.obj: output_example.c.obj
+
+.PHONY : output_example.obj
+
+# target to build an object file
+output_example.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/output_example.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/output_example.c.obj
+.PHONY : output_example.c.obj
+
+output_example.i: output_example.c.i
+
+.PHONY : output_example.i
+
+# target to preprocess a source file
+output_example.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/output_example.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/output_example.c.i
+.PHONY : output_example.c.i
+
+output_example.s: output_example.c.s
+
+.PHONY : output_example.s
+
+# target to generate assembly for a file
+output_example.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/output_example.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/output_example.c.s
+.PHONY : output_example.c.s
+
+pcm2aac.obj: pcm2aac.c.obj
+
+.PHONY : pcm2aac.obj
+
+# target to build an object file
+pcm2aac.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/pcm2aac.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/pcm2aac.c.obj
+.PHONY : pcm2aac.c.obj
+
+pcm2aac.i: pcm2aac.c.i
+
+.PHONY : pcm2aac.i
+
+# target to preprocess a source file
+pcm2aac.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/pcm2aac.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/pcm2aac.c.i
+.PHONY : pcm2aac.c.i
+
+pcm2aac.s: pcm2aac.c.s
+
+.PHONY : pcm2aac.s
+
+# target to generate assembly for a file
+pcm2aac.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/pcm2aac.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/pcm2aac.c.s
+.PHONY : pcm2aac.c.s
+
+remuxing.obj: remuxing.c.obj
+
+.PHONY : remuxing.obj
+
+# target to build an object file
+remuxing.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/remuxing.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/remuxing.c.obj
+.PHONY : remuxing.c.obj
+
+remuxing.i: remuxing.c.i
+
+.PHONY : remuxing.i
+
+# target to preprocess a source file
+remuxing.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/remuxing.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/remuxing.c.i
+.PHONY : remuxing.c.i
+
+remuxing.s: remuxing.c.s
+
+.PHONY : remuxing.s
+
+# target to generate assembly for a file
+remuxing.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/remuxing.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/remuxing.c.s
+.PHONY : remuxing.c.s
+
 swsscale.obj: swsscale.c.obj
 
 .PHONY : swsscale.obj
@@ -334,6 +424,15 @@ help:
 	@echo ... marge_image2video.obj
 	@echo ... marge_image2video.i
 	@echo ... marge_image2video.s
+	@echo ... output_example.obj
+	@echo ... output_example.i
+	@echo ... output_example.s
+	@echo ... pcm2aac.obj
+	@echo ... pcm2aac.i
+	@echo ... pcm2aac.s
+	@echo ... remuxing.obj
+	@echo ... remuxing.i
+	@echo ... remuxing.s
 	@echo ... swsscale.obj
 	@echo ... swsscale.i
 	@echo ... swsscale.s

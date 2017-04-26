@@ -90,7 +90,7 @@ void convert(){
         if(fread(frame_buff,1,src_w*src_h*src_bpp/8,in_file)!=src_w*src_h*src_bpp/8){
             break;
         }
-        //先翻转yuv180°不然后面直接转会颠倒(转成rgb24时会颠倒)
+        //先翻转yuv180°不然后面直接转会颠倒(转成rgb24时会颠倒),可能是ffmpeg版本问题，换了个版本发觉没有颠倒
 //        uint8_t *dst=av_malloc(src_w*src_h*src_bpp/8);
 //        yuv_rotate_180(dst,frame_buff,src_w,src_h);
 //        memcpy(frame_buff,dst,src_w*src_h*src_bpp/8);

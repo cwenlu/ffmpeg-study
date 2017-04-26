@@ -35,6 +35,10 @@ swsscale.h
 C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/swsscale.h
 marge_image2video.h
 C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/marge_image2video.h
+pcm2aac.h
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/pcm2aac.h
+remuxing.h
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/remuxing.h
 
 C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/marge_image2video.c
 marge_image2video.h
@@ -45,6 +49,26 @@ libavformat/avformat.h
 C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/marge_image2video.h
 libavutil/frame.h
 -
+
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/pcm2aac.c
+pcm2aac.h
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/pcm2aac.h
+libavformat/avformat.h
+-
+libavutil/imgutils.h
+-
+
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/pcm2aac.h
+
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/remuxing.c
+remuxing.h
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/remuxing.h
+libavformat/avformat.h
+-
+libavutil/timestamp.h
+-
+
+C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/remuxing.h
 
 C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/swsscale.c
 swsscale.h
@@ -341,6 +365,10 @@ avutil.h
 E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/avutil.h
 attributes.h
 E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/attributes.h
+
+E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/timestamp.h
+common.h
+E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/common.h
 
 E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/version.h
 macros.h
