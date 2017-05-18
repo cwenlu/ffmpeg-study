@@ -82,7 +82,8 @@ void pcm2aac(){
 
     int i=0;
     while(fread(frame_buff,1,size,in_file)>0 && !feof(in_file)){
-        frame->data[0]=frame_buff;
+//        frame->data[0]=frame_buff;
+        frame->extended_data[0]=frame_buff;
         frame->pts=i;
         i++;
 

@@ -11,6 +11,8 @@
 #include "marge_image2video.h"
 #include "pcm2aac.h"
 #include "remuxing.h"
+
+
 //int main() {
 //
 ////    yuv2jpg();
@@ -22,7 +24,16 @@
 ////    pcm2aac();
 ////    remux("C:/Users/Administrator.PC-20160506VZIM/Desktop/kkk.mp4","C:/Users/Administrator.PC-20160506VZIM/Desktop/kkk_copy.mp4");
 ////    demux();
+////    decoder_audio();
+//
+//
 //    return 0;
 //}
+
+
+
+
+
+
 
 

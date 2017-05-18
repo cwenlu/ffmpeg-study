@@ -164,7 +164,6 @@ void margeImage2Video(const char *in_file, const char *out_file){
     video_st->codecpar=codec_parameters;
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
     avformat_write_header(fmt_ctx,NULL);
     av_init_packet(&pkt);
     pkt.data=NULL;
@@ -183,7 +182,8 @@ void margeImage2Video(const char *in_file, const char *out_file){
         strcat(full_name,name_suffix);
         printf("%s\n",full_name);
         decodeJpg(full_name,frame);
-
+        double frame_between=AV_TIME_BASE*av_q2d(codec_ctx->time_base);
+        frame->pts=av_rescale_q(i*frame_between,AV_TIME_BASE_Q,video_st->time_base);
     send:
         ret=avcodec_send_frame(codec_ctx,frame);
         if(ret<0){
@@ -204,9 +204,6 @@ void margeImage2Video(const char *in_file, const char *out_file){
             goto end;
         }
 
-        double frame_between=AV_TIME_BASE*av_q2d(codec_ctx->time_base);
-        pkt.pts=av_rescale_q(i*frame_between,AV_TIME_BASE_Q,video_st->time_base);
-        pkt.dts=pkt.pts;
         av_write_frame(fmt_ctx,&pkt);
         if(!full_name){
             free(full_name);

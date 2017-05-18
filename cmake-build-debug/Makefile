@@ -165,6 +165,66 @@ decoder.c.s:
 	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/decoder.c.s
 .PHONY : decoder.c.s
 
+demuxing_decoding.obj: demuxing_decoding.c.obj
+
+.PHONY : demuxing_decoding.obj
+
+# target to build an object file
+demuxing_decoding.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/demuxing_decoding.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/demuxing_decoding.c.obj
+.PHONY : demuxing_decoding.c.obj
+
+demuxing_decoding.i: demuxing_decoding.c.i
+
+.PHONY : demuxing_decoding.i
+
+# target to preprocess a source file
+demuxing_decoding.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/demuxing_decoding.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/demuxing_decoding.c.i
+.PHONY : demuxing_decoding.c.i
+
+demuxing_decoding.s: demuxing_decoding.c.s
+
+.PHONY : demuxing_decoding.s
+
+# target to generate assembly for a file
+demuxing_decoding.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/demuxing_decoding.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/demuxing_decoding.c.s
+.PHONY : demuxing_decoding.c.s
+
+filtering_video.obj: filtering_video.c.obj
+
+.PHONY : filtering_video.obj
+
+# target to build an object file
+filtering_video.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/filtering_video.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/filtering_video.c.obj
+.PHONY : filtering_video.c.obj
+
+filtering_video.i: filtering_video.c.i
+
+.PHONY : filtering_video.i
+
+# target to preprocess a source file
+filtering_video.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/filtering_video.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/filtering_video.c.i
+.PHONY : filtering_video.c.i
+
+filtering_video.s: filtering_video.c.s
+
+.PHONY : filtering_video.s
+
+# target to generate assembly for a file
+filtering_video.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/filtering_video.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/filtering_video.c.s
+.PHONY : filtering_video.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -224,36 +284,6 @@ marge_image2video.c.s:
 	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/marge_image2video.c.s
 	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/marge_image2video.c.s
 .PHONY : marge_image2video.c.s
-
-output_example.obj: output_example.c.obj
-
-.PHONY : output_example.obj
-
-# target to build an object file
-output_example.c.obj:
-	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/output_example.c.obj
-	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/output_example.c.obj
-.PHONY : output_example.c.obj
-
-output_example.i: output_example.c.i
-
-.PHONY : output_example.i
-
-# target to preprocess a source file
-output_example.c.i:
-	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/output_example.c.i
-	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/output_example.c.i
-.PHONY : output_example.c.i
-
-output_example.s: output_example.c.s
-
-.PHONY : output_example.s
-
-# target to generate assembly for a file
-output_example.c.s:
-	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/output_example.c.s
-	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/output_example.c.s
-.PHONY : output_example.c.s
 
 pcm2aac.obj: pcm2aac.c.obj
 
@@ -418,15 +448,18 @@ help:
 	@echo ... decoder.obj
 	@echo ... decoder.i
 	@echo ... decoder.s
+	@echo ... demuxing_decoding.obj
+	@echo ... demuxing_decoding.i
+	@echo ... demuxing_decoding.s
+	@echo ... filtering_video.obj
+	@echo ... filtering_video.i
+	@echo ... filtering_video.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... marge_image2video.obj
 	@echo ... marge_image2video.i
 	@echo ... marge_image2video.s
-	@echo ... output_example.obj
-	@echo ... output_example.i
-	@echo ... output_example.s
 	@echo ... pcm2aac.obj
 	@echo ... pcm2aac.i
 	@echo ... pcm2aac.s

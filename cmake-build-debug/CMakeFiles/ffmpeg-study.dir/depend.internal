@@ -5,7 +5,6 @@ CMakeFiles/ffmpeg-study.dir/decoder.c.obj
  C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/decoder.c
  C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/decoder.h
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavcodec/avcodec.h
- E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavcodec/version.h
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavformat/avformat.h
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavformat/avio.h
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavformat/version.h
@@ -24,6 +23,69 @@ CMakeFiles/ffmpeg-study.dir/decoder.c.obj
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/macros.h
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/mathematics.h
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/mem.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/opt.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/pixfmt.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/rational.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/samplefmt.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/version.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libswresample/swresample.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libswresample/version.h
+CMakeFiles/ffmpeg-study.dir/demuxing_decoding.c.obj
+ C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/demuxing_decoding.c
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavcodec/avcodec.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavformat/avformat.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavformat/avio.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavformat/version.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/attributes.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/avconfig.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/avutil.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/buffer.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/channel_layout.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/common.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/cpu.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/dict.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/error.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/frame.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/imgutils.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/intfloat.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/log.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/macros.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/mathematics.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/mem.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/pixdesc.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/pixfmt.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/rational.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/samplefmt.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/timestamp.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/version.h
+CMakeFiles/ffmpeg-study.dir/filtering_video.c.obj
+ C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/filtering_video.c
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavcodec/avcodec.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavcodec/version.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavfilter/avfilter.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavfilter/avfiltergraph.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavfilter/buffersink.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavfilter/buffersrc.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavfilter/version.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavformat/avformat.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavformat/avio.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavformat/version.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/attributes.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/avconfig.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/avutil.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/buffer.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/channel_layout.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/common.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/cpu.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/dict.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/error.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/frame.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/intfloat.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/log.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/macros.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/mathematics.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/mem.h
+ E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/opt.h
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/pixfmt.h
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/rational.h
  E:/ffmpeg/ffmpeg-20161005-54220ce-win32-dev/include/libavutil/samplefmt.h

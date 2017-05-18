@@ -19,6 +19,12 @@ static void log_packet(const AVFormatContext *fmt_ctx, const AVPacket *pkt, cons
 //           pkt->stream_index);
 }
 
+/**
+ * 重采样视频，从一个容器格式到另一个容器格式
+ * 但是实际测试是输入MP4输出MP4，如果输出eg: avi，则会有问题，暂没深究
+ * @param in_file
+ * @param out_file
+ */
 void remux(char *in_file,char *out_file){
     AVOutputFormat *ofmt = NULL;
     AVFormatContext *ifmt_ctx = NULL, *ofmt_ctx = NULL;
@@ -122,7 +128,10 @@ void remux(char *in_file,char *out_file){
 
 }
 
-
+/**
+ * 分离出h264和aac
+ * aac不能播放因为没有adts
+ */
 void demux(){
     AVFormatContext *fmt_ctx=NULL;
     AVPacket pkt;

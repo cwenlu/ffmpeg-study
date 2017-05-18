@@ -5,8 +5,8 @@
 #ifndef FFMPEG_STUDY_DECODER_H
 #define FFMPEG_STUDY_DECODER_H
 void decoder();
-/**
- * 只使用libavcodec
- */
+
 void decoder2();
+
+void decoder_audio();
 #endif //FFMPEG_STUDY_DECODER_H

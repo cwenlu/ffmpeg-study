@@ -138,6 +138,14 @@
 			<Option target="ffmpeg-study"/>
 			<Option target="ffmpeg"/>
 		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/demuxing_decoding.c">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/filtering_video.c">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
 		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/main.c">
 			<Option target="ffmpeg-study"/>
 			<Option target="ffmpeg"/>
@@ -147,6 +155,22 @@
 			<Option target="ffmpeg"/>
 		</Unit>
 		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/marge_image2video.h">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/pcm2aac.c">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/pcm2aac.h">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/remuxing.c">
+			<Option target="ffmpeg-study"/>
+			<Option target="ffmpeg"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/remuxing.h">
 			<Option target="ffmpeg-study"/>
 			<Option target="ffmpeg"/>
 		</Unit>

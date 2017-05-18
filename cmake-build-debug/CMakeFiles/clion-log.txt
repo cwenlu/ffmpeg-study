@@ -1,4 +1,15 @@
 E:\clion\bin\cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Administrator.PC-20160506VZIM\ClionProjects\ffmpeg-study
+./decoder.c
+./demuxing_decoding.c
+./filtering_video.c
+./main.c
+./marge_image2video.c
+./muxing.c
+./pcm2aac.c
+./remuxing.c
+./swsscale.c
+./yuv2h64.c
+./yuv2jpg.c
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/Administrator.PC-20160506VZIM/ClionProjects/ffmpeg-study/cmake-build-debug
