@@ -5,13 +5,17 @@
 #include "pcm2aac.h"
 #include <libavformat/avformat.h>
 #include <libavutil/imgutils.h>
+#include <libswresample/swresample.h>
+#include <libavutil/opt.h>
+
 static void logv(char *method_name, int ret){
     printf("%s : %d(%s)",method_name,ret,av_err2str(ret));
 }
-/*有问题，暂时不知道为啥*/
+/*有问题，暂时不知道为啥,新版不支持AV_SAMPLE_FMT_S16，所以需要重采样，然后编码，还没实现*/
+
 void pcm2aac(){
     char *out_file="pcm2aac.aac";
-    FILE *in_file=fopen("tdjm.pcm","rb");
+    FILE *in_file=fopen("NocturneNo2inEflat_44.1k_s16le.pcm","rb");
     AVFormatContext *fmt_ctx=NULL;
     AVOutputFormat *ofmt=NULL;
     AVStream *audio_st=NULL;
@@ -80,17 +84,36 @@ void pcm2aac(){
     pkt.data=NULL;
     pkt.size=0;
 
+//    SwrContext *swr_ctx=swr_alloc();
+//    av_opt_set_int(swr_ctx,"in_channel_layout",AV_CH_LAYOUT_MONO,0);
+//    av_opt_set_int(swr_ctx,"out_channel_layout",AV_CH_LAYOUT_STEREO,0);
+//    av_opt_set_int(swr_ctx,"in_sample_rate",44100,0);
+//    int dst_sample_rate = 48000;
+//    av_opt_set_int(swr_ctx, "out_sample_rate", dst_sample_rate, 0);
+//    av_opt_set_sample_fmt(swr_ctx,"in_sample_fmt",AV_SAMPLE_FMT_S16,0);
+//    av_opt_set_sample_fmt(swr_ctx,"out_sample_fmt",AV_SAMPLE_FMT_FLTP,0);
+//    swr_init(swr_ctx);
+//    int64_t delay_nb_samples=swr_get_delay(swr_ctx,44100);
+//    int dst_nb_channels=av_get_channel_layout_nb_channels(AV_CH_LAYOUT_STEREO);
+//    int dst_nb_samples=av_rescale_rnd(delay_nb_samples+frame->nb_samples,dst_sample_rate,44100,AV_ROUND_UP);
+//    uint8_t *output;
+//    av_samples_alloc(&output,NULL,dst_nb_channels,dst_sample_rate,AV_SAMPLE_FMT_FLTP,1);
+
     int i=0;
     while(fread(frame_buff,1,size,in_file)>0 && !feof(in_file)){
 //        frame->data[0]=frame_buff;
-        frame->extended_data[0]=frame_buff;
+//        frame->extended_data[0]=frame_buff;
+
+//        swr_convert(swr_ctx, &output, dst_nb_samples,
+//                    frame->extended_data, frame->nb_samples);
+
         frame->pts=i;
         i++;
-
+    send:
         ret=avcodec_send_frame(codec_ctx,frame);
         if(ret<0){
             if(AVERROR(EAGAIN)==ret){
-                continue;
+                //
             }
             logv("avcodec_send_frame",ret);
             break;
@@ -98,13 +121,14 @@ void pcm2aac(){
         ret=avcodec_receive_packet(codec_ctx,&pkt);
         if(ret<0){
             if(AVERROR(EAGAIN)==ret){
-                continue;
+               goto send;
             }
             logv("avcodec_receive_packet",ret);
             break;
         }
 
         av_write_frame(fmt_ctx,&pkt);
+        av_packet_unref(&pkt);
     }
 //    flush encoder
     av_write_trailer(fmt_ctx);

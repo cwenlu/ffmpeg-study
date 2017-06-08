@@ -44,7 +44,7 @@ void decoder() {
     int ret = -1;
 
     av_register_all();
-    ret = avformat_open_input(&fmt_ctx, "input.mp4", NULL, NULL);
+    ret = avformat_open_input(&fmt_ctx, "input.mp4"/*"input.h264"*/, NULL, NULL);
     if (ret < 0) {
         logv("avformat_open_input", ret);
         goto end;
@@ -107,7 +107,7 @@ void decoder() {
             fwrite(frame->data[0], 1, y_size, out_file);
             fwrite(frame->data[1], 1, y_size / 4, out_file);
             fwrite(frame->data[2], 1, y_size / 4, out_file);
-
+            av_packet_unref(&pkt);
         }
     }
     printf("%d===", frame->linesize[0]);
@@ -206,11 +206,13 @@ void decoder2() {
                 fwrite(frame->data[2] + frame->linesize[2] * i, 1, frame->width / 2, out_file);
             }
 
+            av_packet_unref(&pkt);
         }
 
     }
 
     flush_decoder(codec_ctx, frame, pkt);
+    av_packet_unref(&pkt);
     end:
     fclose(in_file);
     fclose(out_file);
@@ -299,7 +301,7 @@ void decoder_audio() {
 //        int buff_size = frame->nb_samples * av_get_bytes_per_sample(frame->format);
         fwrite(frame->extended_data[0], 1, buff_size, out_pcm);
 
-        //convert 重采样
+        //convert 重采样,应该吧av_samples_alloc提到循环外，这里没有这么做
         int dst_nb_samples=av_rescale_rnd(delay_nb_sample+frame->nb_samples, dst_sample_rate,frame->sample_rate , AV_ROUND_UP);
         uint8_t *output;
         av_samples_alloc(&output, NULL, dst_nb_channels, dst_sample_rate,
@@ -327,3 +329,4 @@ void decoder_audio() {
     fclose(out_convert_pcm);
 
 }
+

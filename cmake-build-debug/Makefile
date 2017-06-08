@@ -165,66 +165,6 @@ decoder.c.s:
 	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/decoder.c.s
 .PHONY : decoder.c.s
 
-demuxing_decoding.obj: demuxing_decoding.c.obj
-
-.PHONY : demuxing_decoding.obj
-
-# target to build an object file
-demuxing_decoding.c.obj:
-	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/demuxing_decoding.c.obj
-	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/demuxing_decoding.c.obj
-.PHONY : demuxing_decoding.c.obj
-
-demuxing_decoding.i: demuxing_decoding.c.i
-
-.PHONY : demuxing_decoding.i
-
-# target to preprocess a source file
-demuxing_decoding.c.i:
-	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/demuxing_decoding.c.i
-	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/demuxing_decoding.c.i
-.PHONY : demuxing_decoding.c.i
-
-demuxing_decoding.s: demuxing_decoding.c.s
-
-.PHONY : demuxing_decoding.s
-
-# target to generate assembly for a file
-demuxing_decoding.c.s:
-	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/demuxing_decoding.c.s
-	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/demuxing_decoding.c.s
-.PHONY : demuxing_decoding.c.s
-
-filtering_video.obj: filtering_video.c.obj
-
-.PHONY : filtering_video.obj
-
-# target to build an object file
-filtering_video.c.obj:
-	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/filtering_video.c.obj
-	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/filtering_video.c.obj
-.PHONY : filtering_video.c.obj
-
-filtering_video.i: filtering_video.c.i
-
-.PHONY : filtering_video.i
-
-# target to preprocess a source file
-filtering_video.c.i:
-	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/filtering_video.c.i
-	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/filtering_video.c.i
-.PHONY : filtering_video.c.i
-
-filtering_video.s: filtering_video.c.s
-
-.PHONY : filtering_video.s
-
-# target to generate assembly for a file
-filtering_video.c.s:
-	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/filtering_video.c.s
-	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/filtering_video.c.s
-.PHONY : filtering_video.c.s
-
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -285,6 +225,36 @@ marge_image2video.c.s:
 	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/marge_image2video.c.s
 .PHONY : marge_image2video.c.s
 
+mux_demux.obj: mux_demux.c.obj
+
+.PHONY : mux_demux.obj
+
+# target to build an object file
+mux_demux.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/mux_demux.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/mux_demux.c.obj
+.PHONY : mux_demux.c.obj
+
+mux_demux.i: mux_demux.c.i
+
+.PHONY : mux_demux.i
+
+# target to preprocess a source file
+mux_demux.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/mux_demux.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/mux_demux.c.i
+.PHONY : mux_demux.c.i
+
+mux_demux.s: mux_demux.c.s
+
+.PHONY : mux_demux.s
+
+# target to generate assembly for a file
+mux_demux.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/mux_demux.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/mux_demux.c.s
+.PHONY : mux_demux.c.s
+
 pcm2aac.obj: pcm2aac.c.obj
 
 .PHONY : pcm2aac.obj
@@ -314,6 +284,36 @@ pcm2aac.c.s:
 	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/pcm2aac.c.s
 	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/pcm2aac.c.s
 .PHONY : pcm2aac.c.s
+
+publish_stream.obj: publish_stream.c.obj
+
+.PHONY : publish_stream.obj
+
+# target to build an object file
+publish_stream.c.obj:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/publish_stream.c.obj
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/publish_stream.c.obj
+.PHONY : publish_stream.c.obj
+
+publish_stream.i: publish_stream.c.i
+
+.PHONY : publish_stream.i
+
+# target to preprocess a source file
+publish_stream.c.i:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/publish_stream.c.i
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/publish_stream.c.i
+.PHONY : publish_stream.c.i
+
+publish_stream.s: publish_stream.c.s
+
+.PHONY : publish_stream.s
+
+# target to generate assembly for a file
+publish_stream.c.s:
+	$(MAKE) -f CMakeFiles\ffmpeg-study.dir\build.make CMakeFiles/ffmpeg-study.dir/publish_stream.c.s
+	$(MAKE) -f CMakeFiles\ffmpeg.dir\build.make CMakeFiles/ffmpeg.dir/publish_stream.c.s
+.PHONY : publish_stream.c.s
 
 remuxing.obj: remuxing.c.obj
 
@@ -448,21 +448,21 @@ help:
 	@echo ... decoder.obj
 	@echo ... decoder.i
 	@echo ... decoder.s
-	@echo ... demuxing_decoding.obj
-	@echo ... demuxing_decoding.i
-	@echo ... demuxing_decoding.s
-	@echo ... filtering_video.obj
-	@echo ... filtering_video.i
-	@echo ... filtering_video.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... marge_image2video.obj
 	@echo ... marge_image2video.i
 	@echo ... marge_image2video.s
+	@echo ... mux_demux.obj
+	@echo ... mux_demux.i
+	@echo ... mux_demux.s
 	@echo ... pcm2aac.obj
 	@echo ... pcm2aac.i
 	@echo ... pcm2aac.s
+	@echo ... publish_stream.obj
+	@echo ... publish_stream.i
+	@echo ... publish_stream.s
 	@echo ... remuxing.obj
 	@echo ... remuxing.i
 	@echo ... remuxing.s

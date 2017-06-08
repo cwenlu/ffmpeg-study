@@ -229,7 +229,7 @@ static int get_format_from_sample_fmt(const char **fmt,
     return -1;
 }
 
-int main2 (int argc, char **argv)
+int main (int argc, char **argv)
 {
     int ret = 0, got_frame;
 
@@ -249,9 +249,10 @@ int main2 (int argc, char **argv)
         refcount = 1;
         argv++;
     }
-    src_filename = argv[1];
-    video_dst_filename = argv[2];
-    audio_dst_filename = argv[3];
+    src_filename = argv[1];//input.mp4
+    video_dst_filename = argv[2];//input.yuv
+    audio_dst_filename = argv[3];//input.pcm
+
 
     /* register all formats and codecs */
     av_register_all();

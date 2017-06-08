@@ -172,42 +172,40 @@ void margeImage2Video(const char *in_file, const char *out_file){
     AVFrame *frame=av_frame_alloc();
     char *name_header="image";
     char *name_suffix=".jpg";
+    int c=0;
     for(int i=1;i<=/*1405*/300;i++){
-        char index[5];//需要记住结束符\0也要占一个位置
-        sprintf(index,"%d",i);
-        char *full_name=malloc(strlen(in_file)+strlen(name_header)+strlen(index)+strlen(name_suffix));
-        strcpy(full_name,in_file);
-        strcat(full_name,name_header);
-        strcat(full_name,index);
-        strcat(full_name,name_suffix);
+        char full_name[100];
+        sprintf(full_name,"%s%s%d%s",in_file,name_header,i,name_suffix);
         printf("%s\n",full_name);
         decodeJpg(full_name,frame);
         double frame_between=AV_TIME_BASE*av_q2d(codec_ctx->time_base);
-        frame->pts=av_rescale_q(i*frame_between,AV_TIME_BASE_Q,video_st->time_base);
+
     send:
+        frame->pts=av_rescale_q(c++*frame_between,AV_TIME_BASE_Q,video_st->time_base);
         ret=avcodec_send_frame(codec_ctx,frame);
         if(ret<0){
             if(AVERROR(EAGAIN)==ret){
+                printf("%d====avcodec_send_frame\n",i);
                 goto send;
+
             }
             logv("avcodec_send_frame",ret);
             goto end;
         }
+
         ret=avcodec_receive_packet(codec_ctx,&pkt);
         if(ret<0){
             //可能出现Resource temporarily unavailable，需要再次发送
             if(AVERROR(EAGAIN)==ret){
+                printf("%d====avcodec_receive_packet\n",i);
                 goto send;
-//                continue;
+
             }
             logv("avcodec_receive_packet",ret);
             goto end;
         }
 
         av_write_frame(fmt_ctx,&pkt);
-        if(!full_name){
-            free(full_name);
-        }
 
     }
     av_packet_unref(&pkt);

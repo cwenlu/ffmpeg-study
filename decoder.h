@@ -9,4 +9,6 @@ void decoder();
 void decoder2();
 
 void decoder_audio();
+
+void resample_audio();
 #endif //FFMPEG_STUDY_DECODER_H

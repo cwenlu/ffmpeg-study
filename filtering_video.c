@@ -15,8 +15,10 @@
 /*裁剪滤镜，一下命令将视频的左上角的四分之一裁剪下来*/
 //const char *filter_descr = "crop=iw/2:ih/2:0:0";
 /*添加字符串水印*/
-const char *filter_descr = "drawtext=fontfile=you_yuan.TTF:fontcolor=red:fontsize=30:text='ffmpeg'";
+//const char *filter_descr = "drawtext=fontfile=you_yuan.TTF:fontcolor=red:fontsize=30:text='ffmpeg'";
 
+/**水印图片*/
+const char *filter_descr="movie=qq.jpg[qq];[in][qq]overlay=10:10[out]";
 
 static AVFormatContext *fmt_ctx;
 static AVCodecContext *dec_ctx;
@@ -83,7 +85,8 @@ static int init_filters(const char *filters_descr)
              dec_ctx->width, dec_ctx->height, dec_ctx->pix_fmt,
              time_base.num, time_base.den,
              dec_ctx->sample_aspect_ratio.num, dec_ctx->sample_aspect_ratio.den);
-
+//    video_size=640x344:pix_fmt=0:time_base=1/25000:pixel_aspect=0/1
+    printf("%s\n",args);
     ret = avfilter_graph_create_filter(&buffersrc_ctx, buffersrc, "in",
                                        args, NULL, filter_graph);
     if (ret < 0) {
