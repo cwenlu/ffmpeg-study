@@ -136,11 +136,12 @@ void remux(char *in_file,char *out_file){
 //转码封装mp4
 int transcode4video()
 {
-    const char* SRC_FILE = "cuc_ieschool.ts";
-//    const char* SRC_FILE = "cuc_ieschool.flv";
+//    const char* SRC_FILE = "sample.flv";//mp4要求音频为aac，这个输入源为MP3，转换则有问题，需要单独对音频转码处理
+//    const char* SRC_FILE = "cuc_ieschool.ts";
+    const char* SRC_FILE = "cuc_ieschool.flv";
     const char* OUT_FILE = "outfile.h264";
-    const char* OUT_FMT_FILE = "outfmtfile.avi";
-//    const char* OUT_FMT_FILE = "outfmtfile.mp4";
+//    const char* OUT_FMT_FILE = "outfmtfile.avi";
+    const char* OUT_FMT_FILE = "outfmtfile.mp4";
     av_register_all();
 
     AVFormatContext* pFormat = NULL;
@@ -334,7 +335,7 @@ int transcode4video()
  * 分离出h264和mp3，直接保存pkt方式
  * （输入源内部流分别是h264，mp3）
  * 这种方式有局限。如果内部是aac直接保存不能播放，没有adts，
- * 还有这个flv测试分出来的h264播放不了，换了一个文件分出来的h264又可以播放（不知道为啥）
+ * 还有这个flv测试分出来的h264播放不了,因为http://www.jianshu.com/p/7bc9e572e65d
  */
 void demux(){
     AVFormatContext *fmt_ctx=NULL;
@@ -362,8 +363,12 @@ void demux(){
     AVBitStreamFilterContext *h264bsfc=av_bitstream_filter_init("h264_mp4toannexb");
     while(av_read_frame(fmt_ctx,&pkt)>=0){
         if(pkt.stream_index==video_index){
+            printf("before--%p\n",pkt.data);
+            //这个函数使用之后必须调用av_free释放pkt.data
             av_bitstream_filter_filter(h264bsfc, fmt_ctx->streams[video_index]->codec, NULL, &pkt.data, &pkt.size, pkt.data, pkt.size, 0);
+            printf("after--->%p\n",pkt.data);
             fwrite(pkt.data,1,pkt.size,out_video);
+            av_free(pkt.data);
         }else if(pkt.stream_index==audio_index){
 
             fwrite(pkt.data,1,pkt.size,out_audio);

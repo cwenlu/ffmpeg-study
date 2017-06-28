@@ -182,13 +182,12 @@ end:
 
 //分离音视频流
 void demuxer(){
-#define USE_H264BSF 0
-//    这个弄出的h264不能放，aac可以
+#define USE_H264BSF 1
 //    const char *in_file="cuc_ieschool.ts";
 //    const char *out_audio="cuc_ieschool.aac";
 //    const char *out_video="cuc_ieschool.h264";
 
-//    这个h264可以，aac不可以
+
     const char *in_file="input.mp4";
     const char *out_audio="input.aac";
     const char *out_video="input.h264";
@@ -271,7 +270,7 @@ void demuxer(){
         AVStream *in_stream=NULL,*out_stream=NULL;
         ret=av_read_frame(ifmt_ctx,&pkt);
         if(ret<0){
-            logv("av_read_frame",ret);
+//            logv("av_read_frame",ret);
             break;
         }
         in_stream=ifmt_ctx->streams[pkt.stream_index];
@@ -321,12 +320,11 @@ void demuxer(){
 
 }
 /**
- * 直接保存pkt，手动添加adts，勉强可参考
  * http://blog.chinaunix.net/xmlrpc.php?r=blog/article&uid=24922718&id=3692670
  * @return
  */
 int demuxer2(){
-    const char *in_file="input.mp4";//"cuc_ieschool.ts",这里面提取的h264播放不了
+    const char *in_file="input.mp4";//"cuc_ieschool.ts"
 
     static int audioindex = -1;
     static int videoindex = -1;
@@ -395,8 +393,7 @@ int demuxer2(){
     printf("extradata size is %d\n",audioCodecCtx->extradata_size);
 
     AVBitStreamFilterContext* bsfc = av_bitstream_filter_init("h264_mp4toannexb");
-    AVBitStreamFilterContext* aacbsfc = av_bitstream_filter_init("aac_adtstoasc");
-    if(!bsfc || !aacbsfc)
+    if(!bsfc)
     {
         return 0;
     }

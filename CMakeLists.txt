@@ -11,7 +11,10 @@ foreach(path ${SOURCE_FILES})
 endforeach(path)
 #排除某个文件
 list(REMOVE_ITEM SOURCE_FILES ./muxing.c ./demuxing_decoding.c)
-list(REMOVE_ITEM SOURCE_FILES ./filtering_video.c)
+list(REMOVE_ITEM SOURCE_FILES ./filtering_video.c ./transcoding.c)
+
+#网上找的一个例子
+list(REMOVE_ITEM SOURCE_FILES ./SplitVideo.cpp ./Test.cpp)
 
 add_executable(ffmpeg ${SOURCE_FILES})
 
